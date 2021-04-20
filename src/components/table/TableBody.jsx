@@ -5,7 +5,7 @@ export default function TableBody({ body }) {
     body && body.length > 0
      ? (
        body.map( (r, i) => (
-        <tr>
+        <tr key={ i }>
           <th scope='row'>{ i+1 }</th>
           <td>{ r.name }</td>
           <td>{ r.surname }</td>

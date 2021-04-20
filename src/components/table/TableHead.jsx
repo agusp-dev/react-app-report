@@ -13,7 +13,7 @@ export default function TableHead({ head }) {
       : 'No Data'
   )
   return (
-    <thead className='w-100'>
+    <thead>
       <tr>{ getHeadData() }</tr>
     </thead>
   )
