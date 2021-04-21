@@ -7,7 +7,7 @@ export default function TableBody({ body }) {
        body.map( (r, i) => (
         <tr key={ i }>
           <th scope='row'>{ i+1 }</th>
-          <td className='text-center'>{ r.image ? <img src={ r.image } alt='Row Image' width='28'/> : 'No Img' }</td>
+          <td>{ r.image ? <img src={ r.image } width='32'/> : 'No Img' }</td>
           <td>{ r.name }</td>
           <td>{ r.surname }</td>
           <td>{ r.gender }</td>
